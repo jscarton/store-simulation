@@ -7,13 +7,13 @@ require __DIR__.'/vendor/autoload.php';
 use Symfony\Component\Console\Application;
 //import commands
 
-use JScarton\Commands\Version\VersionCommand;
-use JScarton\Commands\Configure\ConfigureCommand;
-use JScarton\Commands\Run\RunCommand;
+use JScarton\commands\version\VersionCommand;
+/*use JScarton\commands\configure\ConfigureCommand;
+use JScarton\commands\run\RunCommand;*/
 
 
 $application = new Application();
-$application->add(new ConfigureCommand());
-$application->add(new RunCommand());
+//$application->add(new ConfigureCommand());
+//$application->add(new RunCommand());
 $application->add(new VersionCommand());
 $application->run();
