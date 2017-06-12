@@ -11,7 +11,7 @@
         }
     ],
     "git-version": "package_version",
-    "main": "simulator",
+    "main": "simulator.php",
     "output": "simulator.phar",
     "stub": true
 }
