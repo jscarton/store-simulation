@@ -1,0 +1,13 @@
+{
+    "require": {
+        "symfony/console": "^3.0",
+        "symfony/process": "^3.0",
+        "vlucas/phpdotenv": "^2.0.1",
+        "oscarotero/env": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {"JScarton\\": "src/"}
+    },
+    "require-dev": {
+    }
+}

@@ -1,0 +1,10 @@
+vendor
+*.phar
+
+*.xml
+
+*.csv
+
+*.xls
+
+*.env
