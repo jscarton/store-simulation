@@ -18,7 +18,7 @@ class VersionCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $text = "Apples Store Simulator\n by Juan Scarton <jscarton@gmail.com>\n Version 1.0";
+        $text = "\n<info>Apples Store Simulator</info>\n by Juan Scarton <jscarton@gmail.com>\n Version 1.0";
         $output->writeln($text);
     }
 }
