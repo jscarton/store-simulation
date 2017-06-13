@@ -33,7 +33,7 @@ Absolutely NO!!!!
 
 A good simulator involves develop a good random events generator using a probability distribution specially designed for the simulation case. This is only a little showcase of PHP language programming and Software Development Skills.
 
-Any shelve on this solution is threated as a FIFO Queue when many customers could be enqueued into the shelve and the first in is also the first going out.
+Any shelve on this solution is treated as a FIFO Queue when many customers could be enqueued into the shelve and the first in is also the first going out.
 
 The events are very simple, could be improved.
 
