@@ -125,9 +125,12 @@ class Simulator
      															            $this->shelves[$shelve]->getCurrentPerson()->pick($this->shelves[$shelve]->pickAFruit());
      														     }
      														break;
-     						case 'EmployeeComesToShelve':	$shelve=$eventHandler->execute(['number_of_shelves'=>count($this->shelves)]);
-                                                            $emp=new \JScarton\classes\persons\Employee($shelve);
-     														$this->shelves[$shelve]->addPerson($emp);
+     						case 'EmployeeComesToShelve':	if ($this->current_persons<$this->max_persons-1){
+                                                                $shelve=$eventHandler->execute(['number_of_shelves'=>count($this->shelves)]);
+                                                                $emp=new \JScarton\classes\persons\Employee($shelve);
+     														     $this->shelves[$shelve]->addPerson($emp);
+                                                                 $this->current_persons++;
+                                                                }
      														break;
      						case 'EmployeeAddSomeFruits':	$fruitsToAdd=$eventHandler->execute(['shelve_capacity'=>$this->max_shelve_capacity]);	
      														foreach ($this->shelves as $shelve) {
@@ -138,6 +141,8 @@ class Simulator
      																	$shelve->getCurrentPerson()->add();
      																	$i++;
      																}
+                                                                    $shelve->removePerson();
+                                                                    $this->current_persons--;
      															}
      														}
      														break;     														
