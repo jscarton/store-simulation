@@ -13,7 +13,7 @@ Based in the received requirements I've developed a simple simulation program us
 
 ## Installation
 
-1. Clone the git repo - `git clone https://github.com/jscarton/store.git`
+1. Clone the git repo - `git clone https://github.com/jscarton/store-simulation.git`
 2. Run `composer install`
 3. Check .env file to adjust configuration settings for the simulator
 
