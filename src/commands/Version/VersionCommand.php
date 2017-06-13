@@ -1,5 +1,5 @@
 <?php
-namespace JScarton\Commands\Version;
+namespace JScarton\commands\version;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
